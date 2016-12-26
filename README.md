@@ -5,7 +5,7 @@ same usefull UI inspeared from viber app
 
 pass this id : 31e18be9 in ionic view
 [Youtube Link](https://www.youtube.com/watch?v=idxPS5s2sfo)<br>
-[ionic market Link](https://market.ionic.io/plugins/ionicactionsheet2)<br><br><br>
+<br><br>
 ![](www/img/Dec-04-2016 14-39-26.gif)<br>
 ![](www/img/Dec-04-2016 13-06-59.gif)<br>
 ##4:Need Custom Work? 
