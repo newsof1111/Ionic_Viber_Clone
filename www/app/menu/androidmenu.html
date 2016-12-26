@@ -1,0 +1,87 @@
+<ion-side-menus>
+   <ion-side-menu-content>
+      <ion-nav-bar class="bar-royal viber-bar" align-title="left">
+         <ion-nav-back-button >
+         </ion-nav-back-button>
+         <ion-nav-buttons side="left">
+            <button class="button button-icon button-clear ion-android-menu"    menu-and-drawer-toggle>
+            </button>
+         </ion-nav-buttons>
+         <ion-nav-buttons side="right">
+            <button class="button button-icon button-clear ion-ios-game-controller-b-outline" >
+            </button>
+            <button class="button box" >
+            </button>
+            <button class="button button-icon button-clear ion-ios-search-strong" >
+            </button>
+         </ion-nav-buttons>
+      </ion-nav-bar>
+      <ion-pane drawer-menu-content>
+         <ion-nav-view name="menuContent"></ion-nav-view>
+      </ion-pane>
+   </ion-side-menu-content>
+   <drawer side="left">
+      <ion-content  style="background-color: #dadada;" has-bouncing="false">
+         <div  class="menu-header" >
+            <img class="circle picture" src="img/sof.jpg" ng-click="showModal()" >
+            <div class="row" >
+               <div class="col col-67 white-text name" >{{user.fullName}} </div>
+               <div class="col col-33 edit" >
+                  <button class="button button-outline button-stable"  ng-click="showModal()">
+                  Edit
+                  </button> 
+               </div>
+            </div>
+         </div>
+         <div class="gameContainer">
+            <div class="text">Viber Games</div>
+            <img class="circle margin-left" src="img/G1.png" >
+            <img class="circle floatLeft " src="img/G2.png" >
+            <img class="circle floatLeft margin-left" src="img/G3.png">
+            <img class="circle floatLeft margin-left" src="img/G4.png" >
+         </div>
+         <div class="list menu-list" >
+            <a class="item clinotonItem" href="#"  >
+               <div class="switched-Icon-Container">
+                  <div  id="switched-Icon" ></div>
+               </div>
+               <p >Share Viber with friends</p>
+            </a>
+            <a class="item menuSideItem" href="#"  >
+               <div class=" Viberout-Icon"></div>
+               <p>Viber Out</p>
+               <p class="sub-text">No credit</p>
+            </a>
+            <a class="item menuSideItem" href="#"  >
+               <div class="StickerMarket-Icon"></div>
+               <p style="padding-top: 8px;">Sticker Market</p>
+               <span class="badge badge-calm viberBadge">1</span>
+            </a>
+            <a class="item menuSideItem" href="#"  >
+               <div class="viberGames-Icon"></div>
+               <p style="padding-top: 8px;">Viber Games</p>
+            </a>
+            <a class="item menuSideItem" href="#"  >
+               <div class="addContact-Icon"></div>
+               <p style="padding-top: 8px;">Add Contact</p>
+            </a>
+            <a class="item menuSideItem" href="#"  >
+               <div class="Settings-Icon"></div>
+               <p style="padding-top: 8px;">Settings</p>
+            </a>
+            <a class="item menuSideItem" href="#"  >
+               <div class="QRCode-Icon"></div>
+               <p style="padding-top: 8px;">QR code</p>
+            </a>
+            <a class="item menuSideItem" href="#"  >
+               <div class="about-Icon"></div>
+               <p style="padding-top: 8px;">About</p>
+            </a>
+            <a class="item menuSideItem" href="#"  >
+               <div class="exit-Icon"></div>
+               <p style="padding-top: 8px;">Exit</p>
+            </a>
+         </div>
+      </ion-content>
+   </drawer>
+</ion-side-menus>

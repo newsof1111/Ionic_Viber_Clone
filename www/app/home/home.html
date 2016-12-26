@@ -1,0 +1,59 @@
+<ion-view view-title="Viber">
+
+	
+<ul ng-click="click()" id="floating-button"  style="bottom : 20px">
+      <li ng-class="buttonClass" style="background-color: #31b4b7 ">
+         <a>
+			 <i class="icon {{floatingIcon}}" ></i>
+		</a>
+      </li>
+</ul>
+	<ion-content scroll="false" style="top:0px;">
+		<ion-slide-box slide-tabs-scrollable="false" show-pager="false" on-slide-changed="changeSlide(index)" bounce="false" ion-slide-tabs>
+
+			<ion-slide ng-repeat="(key, element) in menu" ion-slide-tab-label="{{element.name}}">
+				
+				<ion-content scroll="true" delegate-handle="{{element.name}}" style="height:calc(100% - 70px);" on-scroll="onScroll()" viber-header-animator>
+
+					<div class="list" ng-if="ready[key]">
+						<div class="item item-avatar chat_item" ng-repeat="chat in element.data">
+							<viber-letter-avatar shape="round" data="{{chat.name}}" ng-if="chat.face===''"></viber-letter-avatar>
+							<img ng-src="{{chat.face}}" ng-if="chat.face!=''" class="chat_item_face">
+							<div class="chat_item_time">
+								{{chat.time}}
+							</div>
+							<h2 class="chat_item_name">{{chat.name}}</h2>
+							<p class="chat_item_lastText">{{chat.lastText}}</p>
+						</div>
+					</div>
+
+					<div class="list" ng-if="!ready[key]">
+						<div class="item item-avatar " ng-repeat="i in [1, 2, 3, 4]">
+							<viber-letter-avatar shape="round" data=""></viber-letter-avatar>
+							<div class="chat_item_time">
+								&#x268B;&#x268B;&#x268B;&#x268B;&#x268B;&#x268B;
+							</div>
+							<h2 style="color: #ef473a;">
+								<div class="skeleton-name"></div>
+							</h2>
+							<p>
+								<div class="skeleton-name"></div>
+							</p>
+						</div>
+						<div class="Viber-loading-container">
+							<div class="Viber-loading-content">
+								<ion-spinner class="Viber-loadingspinner spinner-royal" icon="spiral "></ion-spinner>
+								<p>Loading Items In Progress</p>
+							</div>
+						</div>
+					</div>
+
+				</ion-content>
+
+			</ion-slide>
+
+		</ion-slide-box>
+
+	</ion-content>
+
+</ion-view>

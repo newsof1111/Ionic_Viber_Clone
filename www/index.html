@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link rel="manifest" href="manifest.json">
+
+    <!-- un-comment this code to enable service worker
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js')
+          .then(() => console.log('service worker installed'))
+          .catch(err => console.log('Error', err));
+      }
+    </script>-->
+    <link href="css/NativeSideMenu.css" rel="stylesheet">
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/slidingTabs.css" rel="stylesheet">
+
+   
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+    <script src="app/directives/NativeSideMenu.js"></script>
+    <script src="app/directives/ViberSlidingTabsDirective.js"></script>
+    <script src="app/directives/sof.viber.letterAvatar.js"></script>
+    <script src="app/directives/sof.viber.headerAnimator.js"></script>
+
+    <!-- your app's js -->
+     <script src="app/app.module.js"></script>
+    <script src="app/app.config.js"></script>
+    <script src="app/home/homeController.js"></script>
+    <script src="app/menu/menuController.js"></script>
+    <script src="app/services/chatsService.js"></script>
+    <script src="app/services/callsService.js"></script>
+    <script src="app/services/contactsService.js"></script>
+
+  </head>
+
+  <body ng-app="ViberClone">
+    
+    <ion-nav-view></ion-nav-view>
+  </body>
+</html>

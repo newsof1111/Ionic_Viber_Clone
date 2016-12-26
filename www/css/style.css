@@ -1,0 +1,486 @@
+
+@font-face {
+    font-family: ViberFont;
+    src: url('../font/Bitstream Vera Sans Roman.ttf');
+}
+@font-face {
+    font-family: ViberFont;
+    src: url('../font/Bitstream Vera Sans Bold Oblique.ttf');
+    font-weight: bold;
+}
+* {
+    font-family: ViberFont;
+}
+.bar {
+    padding-top: 30px !important;
+    height: 68px;
+}
+.bar .title {
+    height: 60px;
+    padding-top: 25px !important;
+}
+.viber-bar {
+    background-color: #7359c7 !important;
+    color: white !important;
+    background-image: none !important; 
+	border:none !important;
+	-webkit-transition: 50ms linear;
+    -moz-transition: 50ms linear;
+    -o-transition: 50ms linear;
+    transition: 50ms linear;
+}
+
+#switched-Icon {
+    animation: size-animation 9s infinite linear;
+    background-repeat: no-repeat;
+    margin-top: 11px;
+    background-size: contain;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+@keyframes size-animation {
+    0% {
+        height: 0px;
+        width: 0px;
+        opacity: 0.0;
+    }
+    5% {
+        height: 30px;
+        width: 30px;
+        opacity: 1;
+        background-image: url('../img/share.png');
+    }
+    25% {
+        height: 30px;
+        width: 30px;
+        opacity: 1;
+        background-image: url('../img/share.png');
+    }
+    30% {
+        height: 0px;
+        width: 0px;
+        opacity: 0.0;
+    }
+    35% {
+        background-image: url('../img/facebook.png');
+        height: 30px;
+        width: 30px;
+        opacity: 1;
+    }
+    55% {
+        background-image: url('../img/facebook.png');
+        height: 30px;
+        width: 30px;
+        opacity: 1;
+    }
+    60% {
+        height: 0px;
+        width: 0px;
+        opacity: 0.0;
+    }
+    65% {
+        background-image: url('../img/twitter.png');
+        height: 30px;
+        width: 30px;
+        opacity: 1;
+    }
+    75% {
+        background-image: url('../img/twitter.png');
+        height: 30px;
+        width: 30px;
+        opacity: 1;
+    }
+    80% {
+        height: 0px;
+        width: 0px;
+        opacity: 0.0;
+    }
+    85% {
+        background-image: url('../img/envelope.png');
+        height: 30px;
+        width: 30px;
+        opacity: 1;
+    }
+    95% {
+        background-image: url('../img/envelope.png');
+        height: 30px;
+        width: 30px;
+        opacity: 1;
+    }
+    100% {
+        background-image: none;
+        height: 0px;
+        width: 0px;
+        opacity: 0.0;
+    }
+}
+.viber-edit-picture-item {
+    border: none !important;
+    margin: 0;
+}
+.viber-edit-picture-image {
+    width: 100%;
+    display: -webkit-box;
+    margin-left: auto;
+    margin-right: auto;
+}
+.editNamePopup .popup {
+    opacity: 1;
+    background-color: white;
+}
+.editNamePopup .popup .popup-head {
+    text-align: left;
+    padding-bottom: 3px;
+    padding-left: 17px;
+    border: none;
+}
+.editNamePopup .popup .popup-body {
+    padding-top: 5px;
+}
+.editNamePopup .popup .popup-body input {
+    border-bottom: solid 1px black;
+    background: none;
+    height: 23px;
+}
+.editNamePopup .popup .popup-buttons .button {
+    font-size: 13px !important;
+    width: 45px !important;
+    padding: 0;
+    margin: 0;
+    display: table-cell;
+    float: right;
+}
+.editNamePopup .popup .popup-buttons {
+    display: initial;
+    padding: 0;
+    min-height: inherit;
+    margin-right: 10px;
+}
+.editNamePopup .popup .popup-buttons .editNamePopupCancel {
+    color: #4410a0;
+    width: 70px !important;
+}
+.modal-open .modal,
+.modal-open .modal-backdrop {
+    pointer-events: auto;
+    background: rgba(0, 0, 0, 0.5);
+}
+.menuSideItem {
+    color: #4a4949;
+    border: none !important;
+    height: 43px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.Viberout-Icon {
+    height: 30px;
+    width: 30px;
+    background-image: url('../img/viberOut.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    float: left;
+    margin-right: 9px;
+    margin-top: 5px;
+}
+.StickerMarket-Icon {
+    height: 30px;
+    width: 30px;
+    background-image: url('../img/stickerMarket.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    float: left;
+    margin-right: 9px;
+    margin-top: 5px;
+}
+.viberGames-Icon {
+    height: 30px;
+    width: 30px;
+    background-image: url('../img/viberGames.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    float: left;
+    margin-right: 9px;
+    margin-top: 5px;
+}
+.addContact-Icon {
+    height: 30px;
+    width: 30px;
+    background-image: url('../img/addContact.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    float: left;
+    margin-right: 9px;
+    margin-top: 5px;
+}
+.Settings-Icon {
+    height: 30px;
+    width: 30px;
+    background-image: url('../img/Settings.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    float: left;
+    margin-right: 9px;
+    margin-top: 5px;
+}
+.QRCode-Icon {
+    height: 30px;
+    width: 30px;
+    background-image: url('../img/QRCode.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    float: left;
+    margin-right: 9px;
+    margin-top: 5px;
+}
+.about-Icon {
+    height: 30px;
+    width: 30px;
+    background-image: url('../img/about.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    float: left;
+    margin-right: 9px;
+    margin-top: 5px;
+}
+.exit-Icon {
+    height: 30px;
+    width: 30px;
+    background-image: url('../img/exit.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    float: left;
+    margin-right: 9px;
+    margin-top: 5px;
+}
+.box {
+    background-repeat: no-repeat;
+    background-position: 50%;
+    height: 30px;
+    width: 30px;
+    border-color: #7359c7 !important;
+    background-color: #7359c7 !important;
+    background-image: url('../img/box.png');
+    background-size: contain;
+    opacity: 1;
+}
+.box.activated {
+    opacity: 0.5;
+}
+.header-item .right-buttons .button {
+    margin-left: 20px;
+}
+.viberBadge {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 6px;
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+/* MAKING A FAKE BACKDROP WHEN MENUSIDE IS OPEN ,the directive will inject 'drawer-open' class to body */
+
+body.drawer-open > ion-nav-view > ion-side-menus > ion-side-menu-content > ion-nav-bar > div:nth-child(5) > ion-header-bar {
+    background-color: rgba(0, 0, 0, 0.1) !important;
+    border: none !important;
+    display: none !important;
+}
+body.drawer-open > ion-nav-view > ion-side-menus > ion-side-menu-content > ion-nav-bar > div:nth-child(4) > ion-header-bar {
+    border: none !important;
+    opacity: 0.2 !important;
+}
+body.drawer-open > ion-nav-view > ion-side-menus > ion-side-menu-content > ion-pane > ion-nav-view > ion-view > #floating-button > li {
+    background-color: rgba(0, 0, 0, 0.68) !important;
+    opacity: 0.2;
+}
+.bar .buttons-right {
+    margin-right: 20px;
+    display: inherit;
+    margin-top: 28px;
+}
+.skeleton-name {
+    width: 70%;
+    height: 16px;
+    background-color: #cecece;
+}
+.Viber-loading-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    height: 100%;
+}
+.Viber-loading-content {
+    text-align: center;
+}
+.Viber-loadingspinner svg {
+    width: 50px;
+    height: 50px;
+}
+.Viber-loading-content p {
+    text-align: center;
+    color: #908f8f;
+}
+.chat_item {
+    border: none !important;
+}
+.chat_item_name {
+    color: #1d1d1d;
+    font-weight: 900 !important;
+    font-size: 14px !important;
+}
+.chat_item_lastText {
+    font-size: 12px !important;
+}
+.chat_item_face {
+    border-radius: 15px !important;
+}
+.chat_item_time {
+    float: right;
+    font-size: 9px;
+    color: #ababab;
+}
+
+#floating-button {
+    bottom: 20px;
+    position: fixed;
+    right: 20px;
+    z-index : 9999;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+    transform: translate3d(0, 0, 0);
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    -webkit-transition: 100ms linear;
+    -moz-transition: 100ms linear;
+    -o-transition: 100ms linear;
+    transition: 100ms linear;
+}
+
+
+
+#floating-button>li {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+
+#floating-button a {
+       width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    text-decoration: none;
+    font-size: 0.8em;
+}
+
+#floating-button .icon{
+    color: white;
+    font-size:30px;
+    padding: 10px;
+}
+.menu-header
+{
+	height: 150px;
+	width: 100%;
+	background-image:url('../img/2.jpg');
+	padding-top: 40px;
+	padding-left: 35px;
+	background-size: contain;
+}
+.menu-header .picture
+{
+	border-radius: 21px;
+	height:65px;
+	
+}
+.menu-header .name
+{
+	font-size: 15px;
+    color: #4a4949;"
+}
+.menu-header .edit
+{
+	font-size: 15px;
+	color:white;
+}
+.menu-header .edit .button
+{
+	color: #4a4949;
+	min-height: 100%;
+	font-size: 14px;
+	line-height: initial;
+}
+.gameContainer
+{
+	background: white;
+	margin-top: 12px;
+    padding-left: 17px;
+	padding-bottom: 5px;
+}
+.gameContainer .text
+{
+	font-size: 13px;
+    color: #424242;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.gameContainer img
+{
+	border-radius: 5px;
+	height:50px;
+}
+.floatLeft
+{
+	float:left;
+}
+.gameContainer .margin-left
+{
+	margin-left:7px;
+}
+.menu-list
+{
+	margin-top: 12px;
+	background: white;
+}
+.sub-text
+{
+	line-height: 12px;
+	color: black !important; 
+	font-size: 11px !important;
+}
+.clinotonItem
+{
+	color: #4a4949;
+	border: none; 
+	height: 43px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.switched-Icon-Container
+{
+	display: inline-flex;
+	height: 30px;
+	width: 30px;
+}
+.clinotonItem  p
+{
+	display: -webkit-inline-box;
+	position: absolute;
+	margin-top: 6px;
+	margin-left: 8px;
+}

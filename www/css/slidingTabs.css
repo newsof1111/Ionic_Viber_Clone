@@ -1,0 +1,67 @@
+ion-slide {
+    background-color: #f0f0f0;
+}
+ion-slide:nth-child(2n) {
+    background-color: #fff;
+}
+.slider {
+    height: 100%;
+}
+.slidingTabs {
+    height: 49px;
+    z-index: 10;
+	
+	-webkit-transition: 50ms linear;
+    -moz-transition: 50ms linear;
+    -o-transition: 50ms linear;
+    transition: 50ms linear;
+}
+.slidingTabs .scroll {
+    height: auto;
+    min-width: 100%;
+}
+.slidingTabs ul {
+    background-color: #7359c7;
+    height: 49px;
+    min-width: 100%;
+}
+.slidingTabs ul li {
+    height: 48px;
+    line-height: 52px;
+    text-align: center;
+    float: left;
+    margin: 0;
+    padding: 0 12px 20px 12px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.6);
+    -webkit-transition: color .25s ease-in-out;
+    transition: color .25s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+.slidingTabs ul li.tab-active {
+    color: white;
+}
+.slidingTabs .tab-indicator-wrapper {
+    width: 100%;
+    height: 5px;
+    -webkit-transform: translateY(-2px);
+    position: relative;
+    bottom:2px;
+ 
+			}
+.slidingTabs .tab-indicator-wrapper .tab-indicator {
+    height: 100%;
+    background-color: #fff;
+    width: 33.33%;
+    position: relative;
+    -webkit-transition-duration: 100ms;
+    transition-duration: 100ms;
+	-webkit-box-shadow: 0 0px 1px black;
+	   -moz-box-shadow: 0 0px  1px black;
+	        box-shadow: 0 0px 1px black;
+	
+
+	
+}
